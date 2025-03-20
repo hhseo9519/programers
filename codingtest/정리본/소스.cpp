@@ -90,4 +90,10 @@ int main() {
 	iter_swap(it3, it4);
 	iter_swap(it3, it5);
 
+	//9. reverse 함수 --> 순서 뒤집기
+	vector<int> vec4 = { 1,2,3,44,4,5,6,7 };
+	reverse(vec4.begin(), vec4.end());
+	/*범위를 지정하여 reverse를 수행할 수도 있는데 reverse 함수의 경우에
+	반 열린 구간으로 vec.end() 처럼 바꾸려고 하는 마지막 iterator하나 뒤의 
+	iterator를 넣어야 딱 거기까지 reverse가 된다*/
 }
